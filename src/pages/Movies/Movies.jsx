@@ -16,7 +16,7 @@ const Movies = () => {
     if (!search) {
       return;
     }
-    API.fetchFilmByQuery(search)
+    API.getSearchMovies(search)
       .then(({ data }) => {
         if (!data.results.length) {
           setFilms([]);

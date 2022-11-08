@@ -36,9 +36,10 @@ const MovieInfo = ({ film }) => {
 
       <div>
         <p>Additional information</p>
-        <ul>
+        <ul className={s.lists}>
           <li>
             <Link
+              className={s.items}
               to="cast"
               state={location.state?.from ? location.state : null}
             >
@@ -47,6 +48,7 @@ const MovieInfo = ({ film }) => {
           </li>
           <li>
             <Link
+              className={s.items}
               to="reviews"
               state={location.state?.from ? location.state : null}
             >

@@ -11,7 +11,7 @@ const MovieDetails = () => {
   const [status, setStatus] = useState('idle');
 
   useEffect(() => {
-    API.fetchFilmByID(movieId)
+    API.getMovieDetails(movieId)
       .then(({ data }) => {
         setFilm(data);
         setStatus('success');

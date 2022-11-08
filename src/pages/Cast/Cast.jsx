@@ -9,7 +9,7 @@ const Cast = () => {
   const [castInfo, setCastInfo] = useState([]);
 
   useEffect(() => {
-    API.fetchFilmCast(movieId)
+    API.getMovieСredits(movieId)
       .then(({ data }) => {
         if (!data.cast.length) {
           toast.warn('No cast info');

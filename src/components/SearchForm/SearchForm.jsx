@@ -37,12 +37,12 @@ const SearchForm = () => {
       <input
         name="film"
         type="text"
-        placeholder="Let's try..."
+        placeholder="Enter"
         className={s.input}
         onChange={handleInputChange}
         value={query}
       />
-      <button type="submit" className={s.btn}>
+      <button type="submit" className={s.button}>
         Search
       </button>
     </form>

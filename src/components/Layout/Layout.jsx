@@ -1,7 +1,7 @@
 import { Outlet, NavLink } from 'react-router-dom';
 import { Suspense } from 'react';
-import s from '../Layout/layout.module.css';
 import { ThreeDots } from 'react-loader-spinner';
+import s from '../Layout/layout.module.css';
 
 const Layout = () => {
   const getActiveClassName = ({ isActive }) => {

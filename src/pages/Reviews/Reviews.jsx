@@ -8,7 +8,7 @@ const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    API.fetchFilmReviews(movieId)
+    API.getMovieReviews(movieId)
       .then(({ data }) => {
         if (!data.results.length) {
           toast.warn('No reviews');

@@ -1,0 +1,27 @@
+.header {
+    max-width: 1170px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px rgb(180, 123, 123), -1em 0 .4em rgb(195, 91, 91);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    color: grey;
+}
+
+.item:hover {
+    scale: 1;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+}
+
+.item.active {
+    color: red;
+}
